@@ -1,0 +1,146 @@
+body{
+    background-color: #21262C;
+    
+}
+html{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.svgWrapper{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 450px;
+    
+  
+    
+   
+    
+}
+.svgmain{
+    position: absolute;
+    top: 50%;
+    left: 50.1%;
+    transform: translate(-50%,-50%);
+    z-index: 300;
+    height: 450px;
+    width: 300px;
+    
+    clip-path: url(#test);
+}
+.svgWrapper p{
+    
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  
+}
+  svg{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  
+    
+    
+}
+
+
+
+.content{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50% );
+    z-index: 53325323;
+ background-color: red;
+ 
+}
+.svgContent img{
+    
+    transform: scale(.98);
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.corner4{
+
+    transform: translate(-20px,20px);
+    
+pointer-events: none;
+    transition: all 200ms;
+    z-index: 300;
+}
+.corner3{
+
+    transform: translate(20px,-20px);
+    
+    pointer-events: none;
+    transition: all 200ms;
+}
+.corner2{
+
+    transform: translate(-20px,-20px);
+    
+    pointer-events: none;
+    transition: all 200ms;
+}
+.corner1{
+
+    transform: translate(20px,20px);
+    
+    pointer-events: none;
+    transition: all 200ms;
+}
+
+.yellowBorder{
+    opacity: 0;
+    transform-origin: center;
+    transition: all 400ms;
+}
+.svgMainWrap:hover .yellowBorder{
+    opacity: 1;
+}
+
+.svgMainWrap:hover .corner4{
+opacity: 1;
+transform: translate(0,0);
+pointer-events: auto;
+}
+.svgMainWrap:hover .corner3{
+    pointer-events: auto;
+opacity: 1;
+transform: translate(0,0);
+
+}
+.svgMainWrap:hover .corner2{
+    pointer-events: auto;
+opacity: 1;
+transform: translate(0,0);
+
+}
+.svgMainWrap:hover .corner1{
+    pointer-events: auto;
+opacity: 1;
+transform: translate(0,0);
+
+}
